@@ -1,4 +1,4 @@
-# SADIYA
+# SADIYA-PRO
 
 SADIYA is a free-stack desktop AI OS layer MVP for Ubuntu.
 
