@@ -1,0 +1,40 @@
+{
+  "name": "sadiya",
+  "version": "1.0.0",
+  "description": "SADIYA desktop AI OS layer MVP",
+  "main": "dist-electron/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && cross-env SADIYA_DEV_SERVER_URL=http://127.0.0.1:5173 electron .\"",
+    "build": "tsc -b && vite build && tsc -p tsconfig.electron.json && node scripts/copy-preload.cjs",
+    "start": "electron .",
+    "preview": "vite preview --host 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc -b && tsc -p tsconfig.electron.json"
+  },
+  "keywords": [],
+  "author": "Sariya Naz",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "electron": "^41.4.0",
+    "eslint": "^9.39.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.1",
+    "vite": "^8.0.10",
+    "wait-on": "^9.0.5"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "framer-motion": "^12.38.0",
+    "tailwindcss": "^4.2.4"
+  }
+}

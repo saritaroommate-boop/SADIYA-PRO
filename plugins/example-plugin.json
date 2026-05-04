@@ -1,0 +1,8 @@
+{
+  "id": "example-research-plugin",
+  "name": "Example Research Plugin",
+  "description": "Example manifest for future web research modules.",
+  "permissions": ["web.search", "browser.open"],
+  "commands": ["search_web", "summarize_page"],
+  "safetyLevel": "safe"
+}
